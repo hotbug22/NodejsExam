@@ -6,7 +6,7 @@ var jade = require('jade');
 http.createServer(function(req, res){
     //
     if (req.method == 'GET') {
-        console.log(req.url+'get');
+        console.log(req.url+'getrequest');
         
         if(req.url == '/'){
         	fs.readFile('index.html', function(err,data){
@@ -49,7 +49,7 @@ http.createServer(function(req, res){
 
     }else if (req.method == 'POST') {
 
-        console.log(req.url+'POST');
+        console.log(req.url+'POST request');
         req.on('data', function(data){
         	res.writeHead(200,{'Content-Type' : 'text/html'});
         	res.end(data);
