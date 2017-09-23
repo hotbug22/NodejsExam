@@ -72,3 +72,4 @@ fs.writeFile('TextFileWrite.txt' , writeData, 'utf8' , function(error){
 
 fs.writeFileSync('TextFileWriteSync.txt' , writeData+' 싱크', 'utf8' );
 console.log('WRITE FILE SYNC COMPLETE');
+
